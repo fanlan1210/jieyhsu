@@ -1,0 +1,82 @@
+/*# sourceMappingURL=breadcrumb.css.map */
+
+.banner_inner .overlay {
+    background: url(../img/banner/home-banner.jpg) no-repeat scroll center center;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    height: 100%;
+    bottom: 0;
+    z-index: -1;
+}
+
+.home_banner_area .banner_inner .banner_content {
+    background: #000000c2;
+    max-width: 555px;
+    margin: auto;
+    padding: 45px 60px;
+    color: #fff;
+    margin-top: 20px;
+}
+
+a {
+    color: #fcdc00;
+    background-color: transparent;
+}
+
+a:hover {
+    color: #FF9800;
+}
+
+.card {
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: 10px;
+    color: #FF9800;
+    position: relative;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    min-width: 0;
+    word-wrap: break-word;
+    background-clip: border-box;
+    border: 1px solid rgba(0, 0, 0, 0.125);
+    border-radius: 0.25rem;
+}
+
+.card:hover {
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: 10px;
+    color: black;
+    position: relative;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    min-width: 0;
+    word-wrap: break-word;
+    background-color: #fcdc00;
+    background-clip: border-box;
+    border: 1px solid rgba(0, 0, 0, 0.125);
+    border-radius: 0.25rem;
+}
+
+h4,
+.h4 {
+    margin-bottom: 0;
+}
+
+.genric-btn.primary-border {
+    color: #fcdc00;
+    border: 1px solid #fcdc00;
+    background: no-repeat;
+}
+
+.genric-btn.primary-border:hover {
+    color: rgb(255, 255, 255);
+    border: 1px solid #FF9800;
+    background: #FF9800;
+}
