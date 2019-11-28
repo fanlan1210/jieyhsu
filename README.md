@@ -1,8 +1,8 @@
 <h2><a href="https://jieyhsu.github.io/jieyhsu">個人網站</a></h2>
 <hw>
-<p><b>Template</b>:<a href="https://colorlib.com/preview/#bitmap">https://colorlib.com/preview/#bitmap</a></p>
-<p><b>Reference</b>:<br>
-    <h3>Home</h3>
+<h3><b>Template</b>:<a href="https://colorlib.com/preview/#bitmap">https://colorlib.com/preview/#bitmap</a></h3>
+    <h3><b>Reference</b>:</h3>
+   <p> <h3>Home</h3>
     <li>原本是黑一個純黑框，我改變成（col-6）照片加上一個(col-6)半透明灰色框與文字</li>
     <li>重新調整過按鈕的顏色（半透明灰色框裡的）</li>
     <li>半透明灰色框裡的文字列點是參考原檔案的elements</li>
