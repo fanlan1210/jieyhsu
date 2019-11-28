@@ -8,7 +8,7 @@
     <li>半透明灰色框裡的文字列點是參考原檔案的elements</li>
     <li>照片的輪播是參考bootstrap的<b>Carousel</b></li>
     <li>同一頁往下滑使用bootstrap的<b>card</b>取帶原本模板的設計 service_item </li>
-    <li>在<b>card</b>裡面內簽FB的連結設計</li>
+    <li>在<b>card</b>內嵌FB連結設計</li>
     <h3>About Me</h3>
     <li>源自於模板的 about ，但畫面被我切成三個部分（比例：4/6/2）</li>
     <li>在比例4的 <b>skill</b> 加入bootstrap的<b>Progress</b>為自己的技能打分數。在css裡增加 .ps，讓字不要跟Progress離太遠</li>
