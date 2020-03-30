@@ -1,0 +1,93 @@
+extends layout
+
+block append head
+    link(rel='stylesheet', href='css/index.css')
+
+block content
+    // ================Home Banner Area =================
+    section.home_banner_area
+        .banner_inner.d-flex.align-items-center
+            .overlay.bg-parallax(data-stellar-ratio='8', data-stellar-vertical-offset='0', data-background='')
+            .container
+                .row.service_inner
+                    .col-lg-6.col-md-6
+                        #carouselExampleIndicators.carousel.slide(data-ride='carousel')
+                            ol.carousel-indicators
+                                li.active(data-target='#carouselExampleIndicators', data-slide-to='0')
+                                li(data-target='#carouselExampleIndicators', data-slide-to='1')
+                            .carousel-inner
+                                .carousel-item.active
+                                    img.d-block.w-100(src='img/圖片 1.png', width='20%', alt='...')
+                                .carousel-item
+                                    img.d-block.w-100(src='img/me2.png', alt='...')
+                            a.carousel-control-prev(href='#carouselExampleIndicators', role='button', data-slide='prev')
+                                span.carousel-control-prev-icon(aria-hidden='true')
+                                span.sr-only Previous
+                            a.carousel-control-next(href='#carouselExampleIndicators', role='button', data-slide='next')
+                                span.carousel-control-next-icon(aria-hidden='true')
+                                span.sr-only Next
+                    .col-lg-6.col-md-6
+                        .banner_content.text-center
+                            h2 許捷宜
+                            p(align='left')
+                                | 我是一位學生，雖然目前對於大目標茫然，但仍努力追尋我可以改變得事物。
+                                br
+                                | 喜歡自己去旅行與探索發現不一樣的生活。
+                                br
+                                a(href='https://www.ntu.edu.tw/', target='_blank') 國立臺灣大學
+                                | ・
+                                a(href='http://www.management.ntu.edu.tw/BA', target='_blank') 工商管理學系
+                            br
+                            p(align='left')
+                                | 我曾經參與的計畫：
+                            ul(align='left')
+                                li
+                                    font(style='vertical-align: inherit;')
+                                        font(style='vertical-align: inherit;') 青少年科學人才培育計畫
+                                li
+                                    font(style='vertical-align: inherit;')
+                                        font(style='vertical-align: inherit;') 青少年跨域整合人才計畫
+                                li
+                                    font(style='vertical-align: inherit;')
+                                        font(style='vertical-align: inherit;')
+                                            | 發起
+                                            a(href='https://swellplan.github.io/', target='_blank') 長浪計畫
+                            a.genric-btn.primary-border.circle(href='about-me.html')
+                                font(style='vertical-align: inherit;')
+                                    font(style='vertical-align: inherit;')
+                                        | 更多關於我 
+                                        i.fa.fa-angle-double-right(aria-hidden='true')
+    // ================End Home Banner Area =================
+    // ================Service Area =================
+    section.service_area.p_120
+        .container
+            .main_title
+                h2 我現在正在執行的事
+                p 以下是關於我現在正在做的事情.
+            .row.service_inner
+                .col-lg-4.col-md-6
+                    a(href='#')
+                        .card(style='width: 18rem;')
+                            iframe(src='https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2FSITCONtw%2Fposts%2F2523407147758049&width=350&show_text=false&height=262&appId', height='200', style='border:none;overflow:hidden', scrolling='no', frameborder='0', allowtransparency='true', allow='encrypted-media')
+                            .card-body
+                                h4 2019 Hour Of Code 台中場
+                                b Dec.7.2019
+                                p
+                                    span(style='text-decoration:underline;') 台中場 總召集人
+                                p 推廣給了所有年齡層的人，藉著一小時的時間，以遊戲的方式揭開程式撰寫的神秘面紗。
+                .col-lg-4.col-md-6
+                    a(href='#')
+                        .card(style='width: 18rem;')
+                            iframe(src='https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Fswellplan108%2Fposts%2F2196696397295860&width=500&show_text=false&height=375&appId', height='200', style='border:none;overflow:hidden', scrolling='no', frameborder='0', allowtransparency='true', allow='encrypted-media')
+                            .card-body
+                                h4 長浪計畫
+                                b Since  Nov.2018
+                                p
+                                    span(style='text-decoration:underline;') 發起創辦人
+                                p.card-text 一群熱血的學長姐分享自己當年特殊選才的經驗，從網路分享的整理、面試的過程與心得，還有特殊選才開始前得經驗交流分享會。
+                .col-lg-4.col-md-6
+                    a(href='  ', target=' ')
+                        .card(style='width: 18rem;')
+                            img.card-img-top(src='img/2019-11-29 02.31.17.jpg',alt='... ')
+                            .card-body
+                                h4 尋找下一個目標與夢想中...
