@@ -1,0 +1,211 @@
+extends layout
+
+block content
+    section.home_gallery_area.p_120
+        .container
+            h2
+                i.fa.fa-camera-retro(aria-hidden='true')
+                |  攝影作品集
+            .isotope_fillter
+                ul.gallery_filter.list
+                    li.active(data-filter='*')
+                        a(href='#') 全部
+                    li(data-filter='.nt')
+                        a(href='#') 自然景觀
+                    li(data-filter='.arc')
+                        a(href='#') 建築
+                    li(data-filter='.cul')
+                        a(href='#') 文化
+        .container.box_1620
+            .gallery_f_inner.row.imageGallery1
+                each photo in ['img\\Photos\\natural scenery\\natural_(1).png','img\\Photos\\natural scenery\\natural_(10).png','img\\Photos\\natural scenery\\natural_(11).png','img\\Photos\\natural scenery\\natural_(12).png','img\\Photos\\natural scenery\\natural_(13).png','img\\Photos\\natural scenery\\natural_(14).png','img\\Photos\\natural scenery\\natural_(15).png','img\\Photos\\natural scenery\\natural_(16).png','img\\Photos\\natural scenery\\natural_(17).png','img\\Photos\\natural scenery\\natural_(2).png','img\\Photos\\natural scenery\\natural_(4).png','img\\Photos\\natural scenery\\natural_(5).png','img\\Photos\\natural scenery\\natural_(6).png','img\\Photos\\natural scenery\\natural_(7).png','img\\Photos\\natural scenery\\natural_(8).png','img\\Photos\\natural scenery\\natural_(9).png','img\\Photos\\natural scenery\\natural_1.jpeg','img\\Photos\\natural scenery\\natural_10.jpeg','img\\Photos\\natural scenery\\natural_13.jpeg','img\\Photos\\natural scenery\\natural_15.jpeg','img\\Photos\\natural scenery\\natural_16.jpeg','img\\Photos\\natural scenery\\natural_17.jpg','img\\Photos\\natural scenery\\natural_6.jpeg','img\\Photos\\natural scenery\\natural_9.jpeg']
+                    .col-lg-3.col-md-4.col-sm-6.nt
+                        .h_gallery_item
+                            img.img-thumbnail(src=photo, alt='')
+                            .hover
+                                a(href='#')
+                                    h4
+                                a.light(href=photo)
+                                    i.fa.fa-expand
+                                    
+                each photo in ["img\\Photos\\culture\\cul(1).png"]
+                    .col-lg-3.col-md-4.col-sm-6.cul
+                        .h_gallery_item
+                            img.img-thumbnail(src=photo, alt='')
+                            .hover
+                                a(href='#')
+                                    h4
+                                a.light(href=photo)
+                                    i.fa.fa-expand
+                                    
+                each photo in ["img\\Photos\\architecture\\arch_(4).png","img\\Photos\\architecture\\arch_(5).png","img\\Photos\\architecture\\arch_1.jpeg","img\\Photos\\architecture\\arch_2.jpeg"]
+                    .col-lg-3.col-md-4.col-sm-6.arc
+                        .h_gallery_item
+                            img.img-thumbnail(src=photo, alt='')
+                            .hover
+                                a(href='#')
+                                    h4
+                                a.light(href=photo)
+                                    i.fa.fa-expand
+            //-                
+                .col-lg-3.col-md-4.col-sm-6.nt
+                    .h_gallery_item
+                        img(src='img/Photos/natural scenery/natural_(1).png', alt='')
+                        .hover
+                            a(href='#')
+                                h4
+                            a.light(href='img/Photos/natural scenery/natural_(1).png')
+                                i.fa.fa-expand
+                .col-lg-3.col-md-4.col-sm-6.nt
+                    .h_gallery_item
+                        img(src='img/Photos/natural scenery/natural_(2).png', alt='')
+                        .hover
+                            a(href='#')
+                                h4
+                            a.light(href='img/Photos/natural scenery/natural_2.jpg')
+                                i.fa.fa-expand
+                .col-lg-3.col-md-4.col-sm-6.cul
+                    .h_gallery_item
+                        img(src='img/Photos/culture/cul(1).png', alt='')
+                        .hover
+                            a(href='#')
+                                h4 窮學盟＿貧窮台北人展覽
+                            a.light(href='img/Photos/culture/cul.jpeg')
+                                i.fa.fa-expand
+                .col-lg-3.col-md-4.col-sm-6.arc
+                    .h_gallery_item
+                        img(src='img/Photos/architecture/arch_(1).png', alt='')
+                        .hover
+                            a(href='#')
+                                h4 國立臺灣科學教育館
+                            a.light(href='img/Photos/architecture/arch_1.jpeg')
+                                i.fa.fa-expand
+                .col-lg-3.col-md-4.col-sm-6.arc
+                    .h_gallery_item
+                        img(src='img/Photos/architecture/arch_(2).png')
+                        .hover
+                            a(href='#')
+                                h4
+                                    | 側拍１０１
+                            a.light(href='img/Photos/architecture/arch_2.jpeg')
+                                i.fa.fa-expand
+                .col-lg-3.col-md-4.col-sm-6.arc
+                    .h_gallery_item
+                        img(src='img/Photos/architecture/arch_(3).png', alt='')
+                        .hover
+                            a(href='#')
+                                h4
+                            a.light(href='img/Photos/architecture/arch_3.jpeg')
+                                i.fa.fa-expand
+                .col-lg-3.col-md-4.col-sm-6.nt
+                    .h_gallery_item
+                        img(src='img/Photos/natural scenery/natural_(4).png', alt='')
+                        .hover
+                            a(href='#')
+                                h4 國立交通大學
+                            a.light(href='img/Photos/natural scenery/natural_4.jpeg')
+                                i.fa.fa-expand
+                .col-lg-3.col-md-4.col-sm-6.nt
+                    .h_gallery_item
+                        img(src='img/Photos/natural scenery/natural_(5).png', alt='')
+                        .hover
+                            a(href='#')
+                                h4
+                            a.light(href='img/Photos/natural scenery/natural_5.jpeg')
+                                i.fa.fa-expand
+                .col-lg-3.col-md-4.col-sm-6.arc.cul
+                    .h_gallery_item
+                        img(src='img/Photos/architecture/arch_(4).png', alt='')
+                        .hover
+                            a(href='#')
+                                h4 台中城隍廟
+                            a.light(href='img/Photos/architecture/arch_4.jpeg')
+                                i.fa.fa-expand
+                .col-lg-3.col-md-4.col-sm-6.nt
+                    .h_gallery_item
+                        img(src='img/Photos/natural scenery/natural_(6).png', alt='')
+                        .hover
+                            a(href='#')
+                                h4
+                            a.light(href='img/Photos/natural scenery/natural_6.jpeg')
+                                i.fa.fa-expand
+                .col-lg-3.col-md-4.col-sm-6.arc
+                    .h_gallery_item
+                        img(src='img/Photos/architecture/arch_(5).png', alt='')
+                        .hover
+                            a(href='#')
+                                h4 國立台灣科學博物館
+                            a.light(href='img/Photos/architecture/arch_5.jpeg')
+                                i.fa.fa-expand
+                .col-lg-3.col-md-4.col-sm-6.nt
+                    .h_gallery_item
+                        img(src='img/Photos/natural scenery/natural_(15).png', alt='')
+                        .hover
+                            a(href='#')
+                                h4
+                            a.light(href='img/Photos/natural scenery/natural_15.jpeg')
+                                i.fa.fa-expand
+                .col-lg-3.col-md-4.col-sm-6.nt
+                    .h_gallery_item
+                        img(src='img/Photos/natural scenery/natural_(7).png', alt='')
+                        .hover
+                            a(href='#')
+                                h4 合歡山
+                            a.light(href='img/Photos/natural scenery/natural_7.jpeg')
+                                i.fa.fa-expand
+                .col-lg-3.col-md-4.col-sm-6.nt
+                    .h_gallery_item
+                        img(src='img/Photos/natural scenery/natural_(8).png', alt='')
+                        .hover
+                            a(href='#')
+                                h4 新竹南寮漁港
+                            a.light(href='img/Photos/natural scenery/natural_8.jpeg')
+                                i.fa.fa-expand
+                .col-lg-3.col-md-4.col-sm-6.nt
+                    .h_gallery_item
+                        img(src='img/Photos/natural scenery/natural_(9).png', alt='')
+                        .hover
+                            a(href='#')
+                                h4 國立臺灣大學
+                            a.light(href='img/Photos/natural scenery/natural_9.jpeg')
+                                i.fa.fa-expand
+                .col-lg-3.col-md-4.col-sm-6.nt
+                    .h_gallery_item
+                        img(src='img/Photos/natural scenery/natural_(11).png', alt='')
+                        .hover
+                            a(href='#')
+                                h4
+                            a.light(href='img/Photos/natural scenery/natural_11.jpeg')
+                                i.fa.fa-expand
+                .col-lg-3.col-md-4.col-sm-6.nt
+                    .h_gallery_item
+                        img(src='img/Photos/natural scenery/natural_(12).png', alt='')
+                        .hover
+                            a(href='#')
+                                h4 惠蓀林場
+                            a.light(href='img/Photos/natural scenery/natural_12.jpeg')
+                                i.fa.fa-expand
+                .col-lg-3.col-md-4.col-sm-6.nt
+                    .h_gallery_item
+                        img(src='img/Photos/natural scenery/natural_(13).png', alt='')
+                        .hover
+                            a(href='#')
+                                h4 彰化大村鄉
+                            a.light(href='img/Photos/natural scenery/natural_13.jpeg')
+                                i.fa.fa-expand
+                .col-lg-3.col-md-4.col-sm-6.nt
+                    .h_gallery_item
+                        img(src='img/Photos/natural scenery/natural_(16).png', alt='')
+                        .hover
+                            a(href='#')
+                                h4
+                            a.light(href='img/Photos/natural scenery/natural_16.jpeg')
+                                i.fa.fa-expand
+                .col-lg-3.col-md-4.col-sm-6.nt
+                    .h_gallery_item
+                        img(src='img/Photos/natural scenery/natural_(17).png', alt='')
+                        .hover
+                            a(href='#')
+                                h4 彰化大村鄉
+                            a.light(href='img/Photos/natural scenery/natural_17.jpg')
+                                i.fa.fa-expand
